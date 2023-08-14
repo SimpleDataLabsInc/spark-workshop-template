@@ -1,0 +1,101 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: shippinginfo
+    type:
+      type: struct
+      fields:
+      - name: address
+        type:
+          type: struct
+          fields:
+          - name: address1
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+          - name: address2
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+          - name: city
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+          - name: country
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+          - name: postcode
+            type: integer
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+          - name: state
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+        nullable: true
+        metadata:
+          description: ''
+          mappings: []
+          tags: []
+      - name: method
+        type: string
+        nullable: true
+        metadata:
+          description: ''
+          mappings: []
+          tags: []
+      - name: recipient
+        type:
+          type: struct
+          fields:
+          - name: firstname
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+          - name: lastname
+            type: string
+            nullable: true
+            metadata:
+              description: ''
+              mappings: []
+              tags: []
+        nullable: true
+        metadata:
+          description: ''
+          mappings: []
+          tags: []
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: email
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

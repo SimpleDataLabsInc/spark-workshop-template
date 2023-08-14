@@ -1,0 +1,984 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "uri" : "pipelines/workflow",
+    "language" : "python",
+    "fabricId" : "2592",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "meiprophecy.io_team.workshop_template.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "l0_bronze_ingest",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "eh6MBTRPhpt_OV9fAKlla$$8RWOjN-9iQYZWbvgWtAHh",
+    "source" : "MutTvMWQDUQrJ8OzQk8Uo$$UfSduVPPbM3MKCjavTC41",
+    "sourcePort" : "rhsV_At4uI03KoS3O5ObD$$a729lalvKtGUP5oMsPsj4",
+    "target" : "yuDh6dnpIZa5Dvfhhr7H0$$uqeFG-4GKGlQDiTclSPKz",
+    "targetPort" : "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5"
+  }, {
+    "id" : "tGokkrGkAHPRyWv_14OI8$$Quy9U2ITObdGGGzlfz0yI",
+    "source" : "yuDh6dnpIZa5Dvfhhr7H0$$uqeFG-4GKGlQDiTclSPKz",
+    "sourcePort" : "ouePR-Ig-6tBi3lN8nGyq$$dHBPEoW06wAL4PGOEcs-N",
+    "target" : "tVoxR6WsTmHcMNnJl32IV$$UDHTcVqTnuQLWgL24L1Vp",
+    "targetPort" : "d7eUEgMH8B9BRXZQPll0c$$bva1z9r8auAKj_TMOMbKw"
+  }, {
+    "id" : "JVpUNxQtADwpbOnkLaDoG$$TopYIag-GjIsT1kvWHNc_",
+    "source" : "tVoxR6WsTmHcMNnJl32IV$$UDHTcVqTnuQLWgL24L1Vp",
+    "sourcePort" : "KF193kzodyGok0RntCmMZ$$G_Y7MKSGSuVDkTtZRR2hZ",
+    "target" : "fwgHhXTMWuYC9SuPmIvO7$$kldX-cqdqeGXPaD7CBijt",
+    "targetPort" : "QzR3zOc-0vMOANWjm4ch_$$fHZ-XrppnB6oeRrPSx_Ps"
+  }, {
+    "id" : "IGOZfp8IX9bI0Cyvl09O2$$zbkBh6Kx-0SQi0PQzcr-c",
+    "source" : "UHbMPxNE2bJi7zemHfFCp$$oUb3yjqZLWKMdhLpCTiSq",
+    "sourcePort" : "Sd3b-ZrAxIcNLDcZ1gO3U$$9PiKQkWo4mN98355DqeWn",
+    "target" : "zMijr6ws3dwmOu9x7dBru$$WYq4lQ0YIIuPRGfUxDgU9",
+    "targetPort" : "QMtO1qG2ZdgjshLMlCBdV$$F8IcZQk9iBKo95FNGOzAR"
+  }, {
+    "id" : "CvNwGvWWkjz5-aVnJ9MWR$$PliDgh_Po0pbM-RIXsm4Z",
+    "source" : "79DuskQrCYqol6ALZcwrZ$$bIyNZos7DSPfZmxqdA87o",
+    "sourcePort" : "aHqIcUZLgG6C39ItIUqMW$$UNWaUzjb6U_H1Qk4juWBa",
+    "target" : "5m429IgvQtBHDH3HPY2lB$$OmoaSQQ27sbEi6GQA9GMU",
+    "targetPort" : "2VqjkIqOSZ8KpB-y608FQ$$tOmOcQ5IlvIa_2mbmYBYL"
+  }, {
+    "id" : "k6q85CnkwnLIBzn9GNhw1$$6xNz3TzgdoxejKDxwSRsp",
+    "source" : "Z1Qcgyns1Y1-EcpEIaj8v$$q3T9bcAgeC7UYtGUnSw3K",
+    "sourcePort" : "9HQjdCwiYXnk_nEkkg6j_$$hV4LrBkIXB8d9cgvAnedm",
+    "target" : "79DuskQrCYqol6ALZcwrZ$$bIyNZos7DSPfZmxqdA87o",
+    "targetPort" : "5RdfPaAEg0f8E6dmwzbck$$uEWYB89PxXjI5xsIK95t3"
+  } ],
+  "processes" : {
+    "fwgHhXTMWuYC9SuPmIvO7$$kldX-cqdqeGXPaD7CBijt" : {
+      "id" : "fwgHhXTMWuYC9SuPmIvO7$$kldX-cqdqeGXPaD7CBijt",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "L0_raw_shippings",
+        "slug" : "L0_raw_shippings",
+        "x" : 640,
+        "y" : 440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QzR3zOc-0vMOANWjm4ch_$$fHZ-XrppnB6oeRrPSx_Ps",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "shippinginfo-address-address1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-address2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-postcode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-state",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-method",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-recipient-firstname",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-recipient-lastname",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_shippings_delta"
+      }
+    },
+    "tVoxR6WsTmHcMNnJl32IV$$UDHTcVqTnuQLWgL24L1Vp" : {
+      "id" : "tVoxR6WsTmHcMNnJl32IV$$UDHTcVqTnuQLWgL24L1Vp",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "RemoveNullAddr",
+        "slug" : "RemoveNullAddr",
+        "x" : 480,
+        "y" : 440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d7eUEgMH8B9BRXZQPll0c$$bva1z9r8auAKj_TMOMbKw",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "shippinginfo-address-address1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-address2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-postcode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-address-state",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-method",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-recipient-firstname",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "shippinginfo-recipient-lastname",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "KF193kzodyGok0RntCmMZ$$G_Y7MKSGSuVDkTtZRR2hZ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "d7eUEgMH8B9BRXZQPll0c$$bva1z9r8auAKj_TMOMbKw##shippinginfo-address-address1" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "`shippinginfo-address-address1` is not null"
+        }
+      }
+    },
+    "79DuskQrCYqol6ALZcwrZ$$bIyNZos7DSPfZmxqdA87o" : {
+      "id" : "79DuskQrCYqol6ALZcwrZ$$bIyNZos7DSPfZmxqdA87o",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "RemoveNullZip",
+        "slug" : "RemoveNullZip",
+        "x" : 340,
+        "y" : 720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5RdfPaAEg0f8E6dmwzbck$$uEWYB89PxXjI5xsIK95t3",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer-address-city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer-address-country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer-address-postcode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer-address-state",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "aHqIcUZLgG6C39ItIUqMW$$UNWaUzjb6U_H1Qk4juWBa",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "5RdfPaAEg0f8E6dmwzbck$$uEWYB89PxXjI5xsIK95t3##customer-address-postcode" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "`customer-address-postcode` is not null"
+        }
+      }
+    },
+    "UHbMPxNE2bJi7zemHfFCp$$oUb3yjqZLWKMdhLpCTiSq" : {
+      "id" : "UHbMPxNE2bJi7zemHfFCp$$oUb3yjqZLWKMdhLpCTiSq",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_orders",
+        "slug" : "L0_raw_orders",
+        "x" : 140,
+        "y" : 300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Sd3b-ZrAxIcNLDcZ1gO3U$$9PiKQkWo4mN98355DqeWn",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_orders_dbfs"
+      }
+    },
+    "MutTvMWQDUQrJ8OzQk8Uo$$UfSduVPPbM3MKCjavTC41" : {
+      "id" : "MutTvMWQDUQrJ8OzQk8Uo$$UfSduVPPbM3MKCjavTC41",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_shipping",
+        "slug" : "L0_raw_shipping",
+        "x" : 140,
+        "y" : 440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rhsV_At4uI03KoS3O5ObD$$a729lalvKtGUP5oMsPsj4",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_bronze_shipping_dbfs"
+      }
+    },
+    "Z1Qcgyns1Y1-EcpEIaj8v$$q3T9bcAgeC7UYtGUnSw3K" : {
+      "id" : "Z1Qcgyns1Y1-EcpEIaj8v$$q3T9bcAgeC7UYtGUnSw3K",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_geo_dbfs",
+        "slug" : "L0_raw_geo_dbfs",
+        "x" : 140,
+        "y" : 720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "9HQjdCwiYXnk_nEkkg6j_$$hV4LrBkIXB8d9cgvAnedm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_geo_dbfs"
+      }
+    },
+    "5m429IgvQtBHDH3HPY2lB$$OmoaSQQ27sbEi6GQA9GMU" : {
+      "id" : "5m429IgvQtBHDH3HPY2lB$$OmoaSQQ27sbEi6GQA9GMU",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "L0_raw_geo_delta",
+        "slug" : "L0_raw_geo_delta",
+        "x" : 540,
+        "y" : 720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2VqjkIqOSZ8KpB-y608FQ$$tOmOcQ5IlvIa_2mbmYBYL",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer-address-city",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer-address-country",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer-address-postcode",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer-address-state",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_geo_delta"
+      }
+    },
+    "yuDh6dnpIZa5Dvfhhr7H0$$uqeFG-4GKGlQDiTclSPKz" : {
+      "id" : "yuDh6dnpIZa5Dvfhhr7H0$$uqeFG-4GKGlQDiTclSPKz",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : 320,
+        "y" : 440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "shippinginfo",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "address",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "address1",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "address2",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "city",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "country",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "postcode",
+                      "type" : "integer",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "state",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "method",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "recipient",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "firstname",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "lastname",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "ouePR-Ig-6tBi3lN8nGyq$$dHBPEoW06wAL4PGOEcs-N",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "explodedColsNewName" : [ ],
+        "fsExpressions" : [ {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.address.address1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.address.address1"
+          },
+          "targetTokens" : [ "shippinginfo", "address", "address1" ],
+          "target" : "shippinginfo-address-address1"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.address.address2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.address.address2"
+          },
+          "targetTokens" : [ "shippinginfo", "address", "address2" ],
+          "target" : "shippinginfo-address-address2"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.address.city",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.address.city"
+          },
+          "targetTokens" : [ "shippinginfo", "address", "city" ],
+          "target" : "shippinginfo-address-city"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.address.country",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.address.country"
+          },
+          "targetTokens" : [ "shippinginfo", "address", "country" ],
+          "target" : "shippinginfo-address-country"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.address.postcode",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.address.postcode"
+          },
+          "targetTokens" : [ "shippinginfo", "address", "postcode" ],
+          "target" : "shippinginfo-address-postcode"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.address.state",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.address.state"
+          },
+          "targetTokens" : [ "shippinginfo", "address", "state" ],
+          "target" : "shippinginfo-address-state"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.method",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.method"
+          },
+          "targetTokens" : [ "shippinginfo", "method" ],
+          "target" : "shippinginfo-method"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.recipient.firstname",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.recipient.firstname"
+          },
+          "targetTokens" : [ "shippinginfo", "recipient", "firstname" ],
+          "target" : "shippinginfo-recipient-firstname"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "shippinginfo.recipient.lastname",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "shippinginfo.recipient.lastname"
+          },
+          "targetTokens" : [ "shippinginfo", "recipient", "lastname" ],
+          "target" : "shippinginfo-recipient-lastname"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "targetTokens" : [ "email" ],
+          "target" : "email"
+        } ],
+        "columnsSelector" : [ "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.method", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.address2", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.recipient", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.recipient.firstname", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.country", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.city", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.recipient.lastname", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.postcode", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.address1", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##email", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.state", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo" ],
+        "explodeColumns" : [ ],
+        "delimiter" : "-"
+      }
+    },
+    "TFjs5yQWref5LMwHEW_eX$$UrmXMgjwypvCNCAVOXDQR" : {
+      "id" : "TFjs5yQWref5LMwHEW_eX$$UrmXMgjwypvCNCAVOXDQR",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_orders_detail_presgres",
+        "slug" : "L0_raw_orders_detail_presgres",
+        "x" : 140,
+        "y" : 580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YSEkjTIL-cE_svBGjxjzB$$LCVN9qBCP6YklpfRHCigK",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "N6-QsaJKNEtI89JJDXp39$$X0UiTOGMsVo0_h7fLzPKW" : {
+      "id" : "N6-QsaJKNEtI89JJDXp39$$X0UiTOGMsVo0_h7fLzPKW",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_customers_dbfs",
+        "slug" : "L0_raw_customers_dbfs",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "RIDbeAipavIGbqjo0qiwv$$mRyh4_0xRSA9NF-kRn3fF",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "zMijr6ws3dwmOu9x7dBru$$WYq4lQ0YIIuPRGfUxDgU9" : {
+      "id" : "zMijr6ws3dwmOu9x7dBru$$WYq4lQ0YIIuPRGfUxDgU9",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "L0_raw_orders_delta",
+        "slug" : "L0_raw_orders_delta",
+        "x" : 320,
+        "y" : 300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QMtO1qG2ZdgjshLMlCBdV$$F8IcZQk9iBKo95FNGOzAR",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "nettotal",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "orderdate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "orderid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ordertype",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "taxrate",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_orders_delta"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.TFjs5yQWref5LMwHEW_eX$$UrmXMgjwypvCNCAVOXDQR.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.N6-QsaJKNEtI89JJDXp39$$X0UiTOGMsVo0_h7fLzPKW.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}
