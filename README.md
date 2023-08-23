@@ -3,3 +3,7 @@
 *** Release notes for version: v0.0 ***
 
 first release of the workshop template with partially pre-populated bronze layer.
+
+*** Release notes for version: v0.1 ***
+
+updated with unity catalog path

@@ -1,6 +1,6 @@
 name: workshop_template
 description: Prophecy Workshop Template
-version: v0.0
+version: v0.1
 author: mei@prophecy.io
 language: python
 buildSystem: ''
