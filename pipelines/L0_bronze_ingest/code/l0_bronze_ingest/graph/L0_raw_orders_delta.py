@@ -7,4 +7,4 @@ from l0_bronze_ingest.config.ConfigStore import *
 from l0_bronze_ingest.udfs.UDFs import *
 
 def L0_raw_orders_delta(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("overwrite").saveAsTable(f"spark_catalog.workshop_bronze.orders")
+    in0.write.format("delta").mode("overwrite").saveAsTable(f"spark_workshop.workshop_bronze.orders")

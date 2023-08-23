@@ -1,9 +1,9 @@
 {
   "metainfo" : {
     "id" : "1",
-    "uri" : "pipelines/workflow",
+    "uri" : "pipelines/L0_bronze_ingest",
     "language" : "python",
-    "fabricId" : "2592",
+    "fabricId" : "4151",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
