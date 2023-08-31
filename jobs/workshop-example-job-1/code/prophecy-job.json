@@ -1,0 +1,219 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "4576",
+    "jobId" : "jobs/workshop-example-job-1",
+    "name" : "workshop-example-job-1",
+    "schedule" : "0 0 0 1/1 * ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "1691",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "2807",
+      "name" : "demos-unity-catalog-guides-dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "small-with-new-java", "large" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "1684",
+      "name" : "workday-default",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "medium", "large" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "4575",
+      "name" : "workshop_fabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "2055",
+      "name" : "bt-dataplatform-bi-dev01",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "prophecy_policy_dev" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "3911",
+      "name" : "fedex-demo-fabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "4576",
+      "name" : "workshop_fabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "4005",
+      "name" : "demos-qa",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "4004",
+      "name" : "demos-prod",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "1174",
+      "name" : "demos",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "large_autoscale" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "2588",
+      "name" : "HealthVerityDemoFabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "largeGroup" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    } ]
+  },
+  "processes" : {
+    "ybY3D6SqOum-Bi16etA-O$$N7AfYp4XYjG7SzTX3d4ET" : {
+      "id" : "ybY3D6SqOum-Bi16etA-O$$N7AfYp4XYjG7SzTX3d4ET",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "L0_bronze_ingest",
+        "slug" : "L0_bronze_ingest",
+        "x" : 375.6000061035156,
+        "y" : 296.3999938964844
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5_q4frmfmo-wngYGEz27z$$WdVVes0ClL2ym3r9I8WLr",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "JYGPfy-Jw__76g0k8RwBa$$shcsxubf8OZ2PWb7cxpgZ",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/L0_bronze_ingest",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "spark-workshop-template" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ ]
+}
