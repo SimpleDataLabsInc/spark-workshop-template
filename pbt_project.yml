@@ -12,7 +12,7 @@ buildSystemDetails:
   createdAt: '2023-08-14 16:54:18'
 pipelines:
   pipelines/L0_bronze_ingest:
-    name: L0_bronze_ingest
+    name: L1_bronze_ingest
     description: ''
     author: mei@prophecy.io
     mode: batch
@@ -32,7 +32,7 @@ pipelines:
     dependencies: {}
 datasets:
   datasets/L0_raw_orders_dbfs:
-    name: L0_raw_orders_dbfs
+    name: L0_orders
     description: ''
     author: mei@prophecy.io
     createdAt: '2023-08-14 17:01:21'
@@ -45,7 +45,7 @@ datasets:
         author: mei@prophecy.io
         createdAt: '2023-08-14 17:01:21'
   datasets/L0_bronze_shipping_dbfs:
-    name: L0_bronze_shipping_dbfs
+    name: L0_shipping
     description: ''
     author: mei@prophecy.io
     createdAt: '2023-08-14 17:02:35'
@@ -58,7 +58,7 @@ datasets:
         author: mei@prophecy.io
         createdAt: '2023-08-14 17:02:35'
   datasets/L0_raw_geo_dbfs:
-    name: L0_raw_geo_dbfs
+    name: L0_geo
     description: ''
     author: mei@prophecy.io
     createdAt: '2023-08-14 17:05:33'
@@ -71,7 +71,7 @@ datasets:
         author: mei@prophecy.io
         createdAt: '2023-08-14 17:05:33'
   datasets/L0_raw_orders_delta:
-    name: L0_raw_orders_delta
+    name: L1_orders_delta
     description: ''
     author: mei@prophecy.io
     createdAt: '2023-08-14 17:20:19'
@@ -84,7 +84,7 @@ datasets:
         author: mei@prophecy.io
         createdAt: '2023-08-14 17:20:19'
   datasets/L0_raw_shippings_delta:
-    name: L0_raw_shippings_delta
+    name: L1_shipping_delta
     description: ''
     author: mei@prophecy.io
     createdAt: '2023-08-14 17:21:53'
@@ -97,7 +97,7 @@ datasets:
         author: mei@prophecy.io
         createdAt: '2023-08-14 17:21:53'
   datasets/L0_raw_geo_delta:
-    name: L0_raw_geo_delta
+    name: L1__geo_delta
     description: ''
     author: mei@prophecy.io
     createdAt: '2023-08-14 17:23:10'

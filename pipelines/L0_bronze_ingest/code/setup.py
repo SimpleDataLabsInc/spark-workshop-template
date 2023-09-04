@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 setup(
-    name = 'L0_bronze_ingest',
+    name = 'L1_bronze_ingest',
     version = '1.0',
     packages = find_packages(include = ('l0_bronze_ingest*', )) + ['prophecy_config_instances'],
     package_dir = {'prophecy_config_instances' : 'configs/resources/config'},
