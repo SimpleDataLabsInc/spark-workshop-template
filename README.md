@@ -15,3 +15,7 @@ updated dataset names to be more consistent
 *** Release notes for version: v0.2 ***
 
 fixed minor typo
+
+*** Release notes for version: v0.3 ***
+
+corrected minor typo
