@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from l0_bronze_ingest.config.ConfigStore import *
 from l0_bronze_ingest.udfs.UDFs import *
 
-def L0_raw_geo_delta(spark: SparkSession, in0: DataFrame):
+def L1_geo_delta(spark: SparkSession, in0: DataFrame):
     in0.write.format("delta").mode("overwrite").saveAsTable(f"spark_workshop.workshop_bronze.geo")
