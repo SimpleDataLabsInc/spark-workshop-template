@@ -90,8 +90,8 @@
       "id" : "fwgHhXTMWuYC9SuPmIvO7$$kldX-cqdqeGXPaD7CBijt",
       "component" : "Target",
       "metadata" : {
-        "label" : "L0_raw_shippings",
-        "slug" : "L0_raw_shippings",
+        "label" : "L1_shipping_delta",
+        "slug" : "L1_shipping_delta",
         "x" : 640,
         "y" : 440,
         "phase" : 0,
@@ -491,8 +491,8 @@
       "id" : "5m429IgvQtBHDH3HPY2lB$$OmoaSQQ27sbEi6GQA9GMU",
       "component" : "Target",
       "metadata" : {
-        "label" : "L0_raw_geo_delta",
-        "slug" : "L0_raw_geo_delta",
+        "label" : "L1_geo_delta",
+        "slug" : "L1_geo_delta",
         "x" : 540,
         "y" : 720,
         "phase" : 0,
@@ -860,8 +860,8 @@
       "id" : "zMijr6ws3dwmOu9x7dBru$$WYq4lQ0YIIuPRGfUxDgU9",
       "component" : "Target",
       "metadata" : {
-        "label" : "L0_raw_orders_delta",
-        "slug" : "L0_raw_orders_delta",
+        "label" : "L1_orders_delta",
+        "slug" : "L1_orders_delta",
         "x" : 320,
         "y" : 300,
         "phase" : 0,
