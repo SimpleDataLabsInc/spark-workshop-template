@@ -1,16 +1,19 @@
 {
   "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
     "id" : "1",
     "uri" : "pipelines/L0_bronze_ingest",
     "language" : "python",
-    "fabricId" : "2061",
+    "fabricId" : "1174",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "meiprophecy.io_team.workshop_template.functions",
-      "sharedFunctionPackageNames" : [ ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -36,7 +39,15 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
-    "dependentProjectExternalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
     "isImported" : false,
     "interimMode" : "Full",
     "interimModeEnabled" : true,
@@ -201,7 +212,8 @@
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_shippings_delta"
@@ -325,7 +337,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "columnsSelector" : [ "d7eUEgMH8B9BRXZQPll0c$$bva1z9r8auAKj_TMOMbKw##shippinginfo-address-address1" ],
@@ -333,6 +346,10 @@
           "format" : "sql",
           "expression" : "`shippinginfo-address-address1` is not null"
         }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "79DuskQrCYqol6ALZcwrZ$$bIyNZos7DSPfZmxqdA87o" : {
@@ -399,7 +416,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "columnsSelector" : [ "5RdfPaAEg0f8E6dmwzbck$$uEWYB89PxXjI5xsIK95t3##customer-address-postcode" ],
@@ -407,6 +425,10 @@
           "format" : "sql",
           "expression" : "`customer-address-postcode` is not null"
         }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "UHbMPxNE2bJi7zemHfFCp$$oUb3yjqZLWKMdhLpCTiSq" : {
@@ -429,7 +451,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_orders_dbfs"
@@ -455,7 +478,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/L0_bronze_shipping_dbfs"
@@ -481,7 +505,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_geo_dbfs"
@@ -548,7 +573,8 @@
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_geo_delta"
@@ -708,7 +734,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "explodedColsNewName" : [ ],
@@ -806,6 +833,10 @@
         "columnsSelector" : [ "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.method", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.address2", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.recipient", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.recipient.firstname", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.country", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.city", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.recipient.lastname", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.postcode", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.address1", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##email", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo.address.state", "HmViv_aQ_I_2T9rC8WlHw$$RaZl_N63IwKoX849F3tL5##shippinginfo" ],
         "explodeColumns" : [ ],
         "delimiter" : "-"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/FlattenSchema",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "TFjs5yQWref5LMwHEW_eX$$UrmXMgjwypvCNCAVOXDQR" : {
@@ -828,7 +859,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : { }
     },
@@ -852,7 +884,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : { }
     },
@@ -935,7 +968,8 @@
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_orders_delta"
@@ -946,7 +980,8 @@
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
-    "isCustomOutputSchema" : false
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
   },
   "diagnostics" : [ {
     "property" : "$.workflow.processes.TFjs5yQWref5LMwHEW_eX$$UrmXMgjwypvCNCAVOXDQR.properties.datasetId",
