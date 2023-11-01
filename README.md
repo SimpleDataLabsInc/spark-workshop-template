@@ -19,3 +19,7 @@ fixed minor typo
 *** Release notes for version: v0.3 ***
 
 corrected minor typo
+
+*** Release notes for version: 0.4.0 ***
+
+regenerating code and creating a new release to be able to share with 'workshops' team
