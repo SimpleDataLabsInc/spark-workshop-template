@@ -6,7 +6,7 @@
     "id" : "1",
     "uri" : "pipelines/L0_bronze_ingest",
     "language" : "python",
-    "fabricId" : "1174",
+    "fabricId" : "6671",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -437,8 +437,8 @@
       "metadata" : {
         "label" : "L0_raw_orders",
         "slug" : "L0_raw_orders",
-        "x" : 140,
-        "y" : 300,
+        "x" : 180,
+        "y" : 220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -870,8 +870,8 @@
       "metadata" : {
         "label" : "L0_raw_customers_dbfs",
         "slug" : "L0_raw_customers_dbfs",
-        "x" : 140,
-        "y" : 160,
+        "x" : 40,
+        "y" : 140,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
