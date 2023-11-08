@@ -7,4 +7,4 @@ from l0_bronze_ingest.config.ConfigStore import *
 from l0_bronze_ingest.udfs.UDFs import *
 
 def L1_shipping_delta(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("overwrite").saveAsTable("`spark_workshop`.`workshop_bronze`.`shipping`")
+    in0.write.format("delta").mode("overwrite").saveAsTable("`spark_workshop`.`bronze_69adf963`.`shipping`")
